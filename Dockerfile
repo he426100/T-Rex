@@ -11,8 +11,7 @@ RUN mkdir t-rex && \
 RUN wget https://github.com/trexminer/T-Rex/releases/download/${T_REX_VERSION}/${T_REX_FILENAME} && \
     tar xf ${T_REX_FILENAME} -C t-rex
 
-
-FROM nvidia/cuda:10.2-base
+FROM nvidia/cuda:11.2.1-base-ubuntu20.04
 
 LABEL maintainer="Dockminer"
 
